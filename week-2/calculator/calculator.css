@@ -1,0 +1,86 @@
+*{
+    font-family: inter;
+}
+
+
+.calc-container{
+    height:844px;
+    width:390px;
+    background-color: #151515;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calc-container ul li{
+    height:75px;
+    width:73px;
+    border-radius: 9px;
+    background-color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin: 10px;
+ 
+}
+
+.calc-container ul .icon{
+    font-size:24px;
+    font-family: inter;
+    color: #66FF7F;
+    
+}
+
+.bottom-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 5px;
+
+    justify-content: center;
+}
+
+.calc-container ul .number{
+   color:white;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #4E4D4D;
+   width: 352px;
+}
+
+.top-container__calc, .top-container__result{
+    color:white;
+    font-size: 48px;
+    font-weight: 400;
+    align-self: end;
+    margin-top: 15%;
+}
+
+.top-container__result{
+    color:#969696
+}
+
+.top-container__icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-container ul .red-flag{
+ background-color: #FF5959;
+    color: #343434;
+    font-size: 36px;
+}
+.calc-container ul .equal{
+    background-color: #66FF7F;
+       color: #343434;
+
+   }
+
+   .left-side__icon{
+    margin-right: 10px;
+   }
