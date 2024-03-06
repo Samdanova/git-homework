@@ -47,3 +47,13 @@ height: 200px;
 .card-block{
     margin-bottom: 3%;
 }
+
+.third-img{
+    width: 150px;
+    height: 100px;
+}
+
+.third-container{
+    border:1px solid black;
+    padding: 2%;
+}
