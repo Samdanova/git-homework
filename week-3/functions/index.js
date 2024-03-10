@@ -29,3 +29,36 @@ function checkExists(array,number){
 console.log(checkExists([4,5,9],9))
 
 //ex4
+
+const calculator={
+    add: function(a,b){
+        return a+b
+    },
+    subtract: function(a,b){
+return a-b
+    }
+}
+
+const result1 = calculator.add(20, 1)
+const result2 = calculator.subtract(30, 9)
+
+console.log(calculator.add(result1, result2)) //should print 42
+
+//ex5
+
+function increaseByNameLength(money,name){
+    return money*name.length
+}
+function makeRegal(name){
+    let nameNew="His Royal Highness, ";
+    return nameNew+name
+}
+const turnToKing = function(name, money){
+    name = name.toUpperCase()
+    money = increaseByNameLength(money, name)
+    name = makeRegal(name)
+
+    console.log(name + " has " + money + " gold coins")
+}
+
+turnToKing("martin luther", 100) 
