@@ -80,8 +80,36 @@ isLeapYear(2400);
 
 //ex 14
 const countryToLiveIn = (language, isIsland, population, country) => {
-    if (language === "English" && isIsland === false && population < 50) {
+    if (language === "English" && !isIsland && population < 50000000) {
         console.log(`You should live in ${country}`)
     } else 
         console.log(` ${country} does not meet your criteria`)
 }
+countryToLiveIn('English', false, 40000000, 'Finland');
+
+//ex#15
+function languageRanking(language) {
+    switch (language.toLowerCase()) {
+      case 'mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+      case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+      case 'english':
+        console.log('3rd place');
+        break;
+      case 'hindi':
+        console.log('Number 4');
+        break;
+      case 'arabic':
+        console.log('5th most spoken language');
+        break;
+      default:
+        console.log('Not in the top 5');
+    }
+  }
+  
+  languageRanking('Mandarin');  
+  languageRanking('Spanish');  
+  languageRanking('French');    
