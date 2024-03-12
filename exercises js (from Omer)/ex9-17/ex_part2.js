@@ -90,26 +90,76 @@ countryToLiveIn('English', false, 40000000, 'Finland');
 //ex#15
 function languageRanking(language) {
     switch (language.toLowerCase()) {
-      case 'mandarin':
-        console.log('MOST number of native speakers!');
-        break;
-      case 'spanish':
-        console.log('2nd place in number of native speakers');
-        break;
-      case 'english':
-        console.log('3rd place');
-        break;
-      case 'hindi':
-        console.log('Number 4');
-        break;
-      case 'arabic':
-        console.log('5th most spoken language');
-        break;
-      default:
-        console.log('Not in the top 5');
+        case 'mandarin':
+            console.log('MOST number of native speakers!');
+            break;
+        case 'spanish':
+            console.log('2nd place in number of native speakers');
+            break;
+        case 'english':
+            console.log('3rd place');
+            break;
+        case 'hindi':
+            console.log('Number 4');
+            break;
+        case 'arabic':
+            console.log('5th most spoken language');
+            break;
+        default:
+            console.log('Not in the top 5');
     }
-  }
-  
-  languageRanking('Mandarin');  
-  languageRanking('Spanish');  
-  languageRanking('French');    
+}
+
+languageRanking('Mandarin');
+languageRanking('Spanish');
+languageRanking('French');
+
+//ex #16
+const validation = (string) => {
+    if (string.length > 7) 
+        console.log('Strong')
+    else 
+        console.log('Weak')
+}
+const validationTern = (string) => {
+    (string.length > 7)
+        ? console.log('Strong')
+        : console.log('Weak')
+}
+
+const validation2 = (string) => {
+    if (string.length > 7 && string !== string.toLowerCase()) 
+        console.log('Very Strong')
+    else if (string.length > 7) 
+        console.log('Strong');
+    else 
+        console.log('Weak')
+}
+const validation3 = (string) => {
+    (string.length > 7 && string !== string.toLowerCase())
+        ? console.log('Very Strong')
+        : (string.length > 7)
+            ? console.log('Strong')
+            : console.log('Weak')
+}
+validation2("Israel12346");
+validation("Israel12346")
+
+//ex 17
+function colorType(color) {
+    switch (color.toLowerCase()) {
+        case 'yellow':
+        case 'pink':
+        case 'orange':
+            return 'light color';
+        case 'blue':
+        case 'purple':
+        case 'brown':
+            return 'dark color';
+        default:
+            return 'Unknown color';
+    }
+}
+console.log(colorType('Yellow'));
+console.log(colorType('Blue'));
+console.log(colorType('Green'));
