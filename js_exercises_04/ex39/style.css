@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    font-weight: bold;
+}
+
+#verificationForm{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.verificationInput{
+    width: 5vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 2rem;
+}
+.commentToUser{
+    margin-top: 2rem;
+    color:red;
+}
