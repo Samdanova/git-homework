@@ -1,0 +1,10 @@
+button{
+    position: absolute;
+    top:0;
+    left:2;
+
+}
+div{
+    position: relative;
+    margin-top: 2rem;
+}
